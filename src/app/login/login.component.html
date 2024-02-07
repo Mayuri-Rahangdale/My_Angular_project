@@ -1,0 +1,16 @@
+<div class="login-container">
+  <form (submit)="userLogin()">
+    <label for="email">Email</label>
+    <input type="email" id="email" (change)="onEmailChange($event)" required />
+
+    <label for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      (change)="onPasswordChange($event)"
+      required
+    />
+
+    <button mat-raised-button color="primary" type="submit">Log In</button>
+  </form>
+</div>

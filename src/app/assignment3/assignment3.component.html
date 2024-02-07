@@ -1,0 +1,27 @@
+<!-- <div>
+  <h1>Game Controller</h1>
+  <button (click)="startGame()">Start</button>
+  <button (click)="stopGame()">Stop</button>
+  <button (click)="resetGame()">Reset</button>
+  <h2>{{ timer }}</h2>
+  <div>
+    <app-even [evenEmitter]="returnEvenCount()"></app-even>
+    <app-odd [oddEmitter]="returnOddCount()"></app-odd>
+  </div>
+</div> -->
+
+<div class="game-container">
+  <h1 class="game-header">Game Controller</h1>
+  <div class="controls">
+    <button (click)="startGame()">Start</button>
+    <button (click)="stopGame()">Stop</button>
+    <button (click)="resetGame()">Reset</button>
+  </div>
+  <div class="timer">
+    <h2>{{ timer }}</h2>
+  </div>
+  <div class="counters">
+    <app-even [evenEmitter]="returnEvenCount()"></app-even>
+    <app-odd [oddEmitter]="returnOddCount()"></app-odd>
+  </div>
+</div>

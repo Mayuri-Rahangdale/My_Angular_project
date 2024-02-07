@@ -1,0 +1,15 @@
+<div>
+  <h1>This is a Child Component</h1>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Send message to Parent</mat-label>
+      <input matInput (change)="childInput($event)" />
+    </mat-form-field>
+  </form>
+  <button mat-fab extended color="primary" (click)="SendToParent()">
+    <mat-icon>favorite</mat-icon>
+    Send to Parent
+  </button>
+
+  <h2>message from parent:{{ parentMessage }}</h2>
+</div>
