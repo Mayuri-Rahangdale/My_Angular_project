@@ -4,5 +4,9 @@
   width: 100%;
 }
 .example-full-width {
+<<<<<<< HEAD
   width: 80%;
+=======
+  width: 100%;
+>>>>>>> master
 }
